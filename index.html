@@ -4,7 +4,14 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="
+      <!-- Bootstap -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+         crossorigin="anonymous"
+      />
+      <!-- font awesome -->
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -12,24 +19,49 @@
          crossorigin="anonymous"
          referrerpolicy="no-referrer"
       />
+      <!-- css -->
       <link rel="stylesheet" href="./style.css" />
+
       <title>Document</title>
    </head>
    <body>
-      <div class="all">
-         <div class="title">login page</div>
-         <div class="input">
-            <div class="email">
-               <label for="email">email</label>
-               <input id="email" type="text" />
-            </div>
-            <div class="password">
-               <label for="password">password</label>
-               <input id="password" type="password" />
-            </div>
-            <div class="btn"></div>
+      <!-- .container>h1+.email>lable+imput^+.password>lable+imput^+.func+button -->
+      <div class="container">
+         <!-- 標題 -->
+         <h1>LogIn Page</h1>
+         <!-- email input area -->
+         <div class="email">
+            <i class="fa-solid fa-envelope icon"></i>
+            <i class="fa-solid fa-question q"></i>
+            <lable for="email">Email</lable>
+            <input id="email" type="text" />
          </div>
-         <div class="login"></div>
+         <!-- password input area -->
+         <div class="password">
+            <i class="fa-solid fa-key icon"></i>
+            <i class="fa-solid fa-question q"></i>
+            <lable for="password">Password</lable>
+            <input id="password" type="password" />
+         </div>
+         <!-- function area -->
+         <div class="func">
+            <div>
+               <input type="checkbox" />
+               <lable>Keep login</lable>
+            </div>
+
+            <button type="button">
+               <a href="./signup.html">Sign Up</a>
+            </button>
+         </div>
+         <!-- Login button -->
+         <button class="login" type="button">LogIn</button>
       </div>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+         crossorigin="anonymous"
+      ></script>
+      <!-- JS放在body最下面 -->
    </body>
 </html>

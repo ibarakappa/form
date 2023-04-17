@@ -1,13 +1,102 @@
-body {
-  background-color: cornflowerblue;
-  text-align: center;
-  justify-content: center;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.all {
-  margin: 250px 0;
-}
-.all .title {
-  width: 300px;
+body {
+  background-color: #9eb1bb;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px #4d6674;
+}
+.container .email,
+.container .password {
+  position: relative;
+}
+.container .email .icon,
+.container .password .icon {
+  position: absolute;
+  font-size: 12px;
+  top: 26px;
+  left: 6px;
+}
+.container .email .q,
+.container .password .q {
+  position: absolute;
+  font-size: 12px;
+  right: 3px;
+  top: 26px;
+  width: 12px;
+}
+.container .email .q:hover,
+.container .password .q:hover {
+  cursor: pointer;
+}
+.container .email lable,
+.container .password lable {
+  font-size: 12px;
+}
+.container .email input,
+.container .password input {
+  display: block;
+  padding: 4px 0 4px 24px;
+}
+.container .func {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 8px 0;
+  padding: 0 55px;
+}
+.container .func input {
+  margin: 0;
+}
+.container .func lable {
+  font-size: 12px;
+}
+.container .func button {
+  font-size: 6px;
+  border: none;
+  background-color: #4d6674;
+  border-radius: 4px;
+  transition: 0.6s;
+}
+.container .func button:hover {
+  background-color: #9eb1bb;
+}
+.container .func button a {
+  color: white;
+  text-decoration: none;
+}
+.container .login {
+  font-size: 6px;
+  border: none;
+  background-color: #4d6674;
+  border-radius: 4px;
+  color: white;
+  padding: 6px 16px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  transition: 0.6s;
+  box-shadow: 2px 2px 2px #888;
+}
+.container .login:hover {
+  background-color: #9eb1bb;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

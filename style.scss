@@ -1,14 +1,116 @@
-body {
-   background-color: cornflowerblue;
-   //    display: inline-block;
-   text-align: center;
-   justify-content: center;
-}
-.all {
-   margin: 250px 0;
+$primary-color: #4d6674;
+$secondary-color: #9eb1bb;
 
-   .title {
-      width: 300px;
-      justify-content: center;
+*,
+*::before,
+*::after {
+   //*字號是代表所有、全部
+   box-sizing: border-box;
+   //讓計算模型的方式改變
+   //原本padding是外擴，用這樣會變成內縮
+}
+
+body {
+   background-color: #9eb1bb;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100vw;
+   height: 100vh;
+   margin: 0;
+}
+
+.container {
+   width: 300px;
+   display: flex;
+   flex-direction: column;
+   // flex的主軸從>變成 V
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+   border-radius: 6px;
+   box-shadow: 5px 5px 5px $primary-color;
+   // email&password
+   .email,
+   .password {
+      position: relative;
+      .icon {
+         position: absolute;
+         font-size: 12px;
+         top: 26px;
+         left: 6px;
+      }
+
+      .q {
+         position: absolute;
+         font-size: 12px;
+         right: 3px;
+         top: 26px;
+         width: 12px;
+
+         &:hover {
+            cursor: pointer;
+         }
+      }
+
+      lable {
+         font-size: 12px;
+      }
+
+      input {
+         display: block;
+         padding: 4px 0 4px 24px;
+      }
+   }
+
+   .func {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin: 8px 0;
+      padding: 0 55px;
+
+      input {
+         margin: 0;
+      }
+
+      lable {
+         font-size: 12px;
+      }
+      button {
+         font-size: 6px;
+         border: none;
+         background-color: #4d6674;
+         border-radius: 4px;
+         transition: 0.6s;
+
+         &:hover {
+            background-color: $secondary-color;
+         }
+
+         a {
+            color: white;
+            text-decoration: none;
+         }
+      }
+   }
+   // login button
+   .login {
+      font-size: 6px;
+      border: none;
+      background-color: #4d6674;
+      border-radius: 4px;
+      color: white;
+      padding: 6px 16px;
+      margin-top: 12px;
+      margin-bottom: 24px;
+      transition: 0.6s;
+      box-shadow: 2px 2px 2px #888;
+
+      &:hover {
+         background-color: $secondary-color;
+         cursor: pointer;
+      }
    }
 }
